@@ -1,7 +1,4 @@
-.someclass {
-   background: blue;
-}
-
-* {
+@charset "utf-8";
+.a-class {
    background: black;
 }

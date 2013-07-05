@@ -5,11 +5,12 @@ def start(args)
    basepath = './app/'
 
    while (session = webserver.accept)
-      puts "HTTP/1.1 200/OK\nContent-type:text/html\n\n"
-      session.print "HTTP/1.1 200/OK\nContent-type:text/html\n\n"
       request = session.gets
-      puts "request" + request
+      puts "request " + request
       trimmedrequest = trim_request(request)
+      ct = get_content_type trimmedrequest
+      session.print "HTTP/1.1 200/OK\nContent-type:#{ct}\n\n"
+      puts"HTTP/1.1 200/OK\nContent-type:#{ct}\n\n" 
       filename = trimmedrequest.chomp
       begin
          displayfile = find_file(filename)
@@ -44,6 +45,23 @@ def find_file(path)
    else
       full_path = basepath + path
    end 
-   File.open full_path, 'r'
+   File.open full_path, 'rb'
 end 
+
+def get_content_type(path)
+    ext = File.extname(path).downcase
+    puts ext
+    return "text/html"  if ext.include? ".html" or ext.include? ".htm"
+    return "text/plain" if ext.include? ".txt"
+    return "text/css"   if ext.include? ".css"
+    return "image/jpeg" if ext.include? ".jpeg" or ext.include? ".jpg"
+    return "image/gif"  if ext.include? ".gif"
+    return "image/bmp"  if ext.include? ".bmp"
+    return "image/png" if ext.include? ".png"
+    return "text/plain" if ext.include? ".rb"
+    return "text/xml"   if ext.include? ".xml"
+    return "text/xml"   if ext.include? ".xsl"
+    return "text/html"
+end
+
 
