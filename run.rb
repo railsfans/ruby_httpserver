@@ -1,3 +1,3 @@
 Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
-start(ARGV)
+Webserver::Server.new(ARGV).start
