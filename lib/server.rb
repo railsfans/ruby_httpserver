@@ -23,9 +23,18 @@ module Webserver
          basepath = './app'   
          while (session = @server.accept)
             request = session.gets
+            headers = Array.new
+            while true
+               line = session.gets
+               puts line.inspect
+               if line.eql? "\r\n"
+                  break
+               end 
+               headers << line
+            end 
+            puts "body? " + session.read(28)
             puts "request " + request
             trimmedrequest = Webserver::trim_request(request)
-            debugger
             ct = Webserver::get_content_type(trimmedrequest)
             session.print "HTTP/1.1 200/OK\nContent-type:#{ct}\n\n"
             puts"HTTP/1.1 200/OK\nContent-type:#{ct}\n\n" 
@@ -75,5 +84,9 @@ module Webserver
       return "text/xml"   if ext.include? ".xsl"
       return "text/html"
    end
+
+   def self.parseHTTPRequest(request)
+
+   end 
 end 
 
