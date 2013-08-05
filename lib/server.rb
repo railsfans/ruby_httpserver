@@ -1,7 +1,7 @@
 require 'socket'
-require 'debugger'
 
 module Webserver
+
    class Server
       attr_accessor :port, :host, :servlets
 
@@ -22,19 +22,15 @@ module Webserver
          puts "Server created at #{@host} and port #{@port}"
          basepath = './app'   
          while (session = @server.accept)
-            request = session.gets
-            headers = Array.new
-            while true
-               line = session.gets
-               puts line.inspect
-               if line.eql? "\r\n"
-                  break
-               end 
-               headers << line
-            end 
-            puts "body? " + session.read(28)
-            puts "request " + request
-            trimmedrequest = Webserver::trim_request(request)
+            #parse the entire request into a key/val map
+            parsed_request = Webserver::parseHTTPRequest(session)
+            heading = parsed_request['Heading']
+
+            #Get the method from the heading
+            method = heading.split(' ')[0]
+
+            #Remove everything except the path from the heading
+            trimmedrequest = Webserver::trim_heading(heading, method)
             ct = Webserver::get_content_type(trimmedrequest)
             session.print "HTTP/1.1 200/OK\nContent-type:#{ct}\n\n"
             puts"HTTP/1.1 200/OK\nContent-type:#{ct}\n\n" 
@@ -55,8 +51,8 @@ module Webserver
       @servlet[route] = servlet   
    end 
 
-   def self.trim_request(request)
-      request.gsub(/GET\ \//, '').gsub(/\ HTTP.*/, '')
+   def self.trim_heading(heading, method)
+      heading.gsub(/#{method}\ \//, '').gsub(/\ HTTP.*/, '')
    end 
 
    def self.find_file(path)
@@ -85,7 +81,40 @@ module Webserver
       return "text/html"
    end
 
+   #TODO: refactor this using chomp instead of slice
    def self.parseHTTPRequest(request)
+      headers = {}
+
+      #get the heading (first line)
+      headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
+      method = headers['Heading'].split(' ')[0]
+
+      #request is going to be a TCPsocket object 
+      #parse the header
+      while true
+         #do inspect to get the escape characters as literals
+         #also remove quotes
+         line = request.gets.inspect.gsub /^"|"$/, ''
+
+         puts line
+         #if the line only contains a newline, then the body is about to start
+         break if line.eql? '\r\n'
+
+         label = line[0..line.index(':')-1]
+
+         #get rid of the escape characters
+         val = line[line.index(':')+1..line.length].tap{|val|val.slice!('\r\n')}.strip
+         headers[label] = val
+      end 
+
+      #If it's a post, then we need to get the body
+      headers['Body'] = request.read(headers['Content-Length'].to_i) if method.eql?('POST')
+      puts headers['Body'] if headers.has_key?('Body')
+
+      return headers
+   end 
+
+   def self.parsePostBody(post_body)
 
    end 
 end 
