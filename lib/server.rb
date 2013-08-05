@@ -23,7 +23,7 @@ module Webserver
          basepath = './app'   
          while (session = @server.accept)
             #parse the entire request into a key/val map
-            parsed_request = Webserver::parseHTTPRequest(session)
+            parsed_request = Webserver::parse_http_request(session)
             heading = parsed_request['Heading']
 
             #Get the method from the heading
@@ -45,11 +45,19 @@ module Webserver
             session.close
          end
       end 
-   end
 
-   def mount(route, servlet)
-      @servlet[route] = servlet   
-   end 
+      def mount(route, servlet)
+         @servlets[route] = servlet   
+      end 
+
+      def route(route, method)
+         case method
+         when 'GET'
+            @servlets[route].do_GET
+         else
+         end 
+      end 
+   end
 
    def self.trim_heading(heading, method)
       heading.gsub(/#{method}\ \//, '').gsub(/\ HTTP.*/, '')
@@ -82,7 +90,7 @@ module Webserver
    end
 
    #TODO: refactor this using chomp instead of slice
-   def self.parseHTTPRequest(request)
+   def self.parse_http_request(request)
       headers = {}
 
       #get the heading (first line)
@@ -114,8 +122,14 @@ module Webserver
       return headers
    end 
 
-   def self.parsePostBody(post_body)
-
+   #takes the post body and makes it into a key/val map
+   def self.parse_post_body(post_body)
+      parsed_attr = {}
+      post_body.split('&').each do |key_val|
+         split_key_val = key_val.split('=')
+         parsed_attr[split_key_val[0]] = split_key_val[1]
+      end 
+      return parsed_attr
    end 
 end 
 
