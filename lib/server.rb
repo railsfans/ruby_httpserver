@@ -1,4 +1,5 @@
 require 'socket'
+require 'nokogiri'
 
 module Webserver
 
@@ -37,8 +38,10 @@ module Webserver
             filename = trimmedrequest.chomp
             begin
                displayfile = Webserver::find_file(filename)
+               puts displayfile.gets
                content = displayfile.read()
-               session.print content
+               puts Nokogiri::HTML(content).text
+               session.print content 
             rescue Errno::ENOENT
                session.print "File not found"
             end
@@ -51,11 +54,17 @@ module Webserver
       end 
 
       def route(route, method)
-         case method
-         when 'GET'
-            @servlets[route].do_GET
-         else
+         view = 'File not found'
+         if @servlets.has_key?(route)
+            case method
+            when 'GET'
+               view = @servlets[route].do_GET
+            when 'POST'
+               view = @servlets[route].do_POST
+            else
+            end 
          end 
+         return view
       end 
    end
 
@@ -70,7 +79,7 @@ module Webserver
       else
          full_path = basepath + path
       end 
-      File.open full_path, 'rb'
+      File.open full_path, 'r'
    end 
 
    def self.get_content_type(path)
