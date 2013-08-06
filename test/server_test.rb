@@ -4,12 +4,11 @@ require 'test/unit'
 class ServerTest < Test::Unit::TestCase
    def test_trim_request
       test_header = 'GET /boo HTTP/1.1' 
-      assert_equal 'boo', Webserver::trim_request(test_header)
+      assert_equal 'boo', Webserver::trim_heading(test_header, 'GET')
    end 
 
    def test_get_content_type
       test_trimmedrequest = "/css/application.css"
-      puts Webserver::get_content_type(test_trimmedrequest)
       assert_equal Webserver::get_content_type(test_trimmedrequest), "text/css"
    end 
 
@@ -20,5 +19,11 @@ class ServerTest < Test::Unit::TestCase
 
    def test_status_message
       assert_equal Webserver::StatusMessage[100], 'Continue'
+   end 
+
+   def test_servlet_mounts
+      server = Webserver::Server.new([]) 
+      server.mount_all('./app')
+      puts server.servlets
    end 
 end 

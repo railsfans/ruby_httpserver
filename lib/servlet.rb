@@ -1,11 +1,14 @@
 module Webserver
    class Servlet
-      def do_GET(req)
-        raise HTTPStatus::NotFound, "not found."
+      def do_GET(session)
+         raise HTTPStatus::NotFound, "not found."
       end
-      def do_POST(req)
-        raise HTTPStatus::NotFound, "not found."
+      def do_POST(session)
+         raise HTTPStatus::NotFound, "not found."
       end 
+      def self.descendants
+         ObjectSpace.each_object(Class).select { |clazz| clazz < self }
+      end
    end 
 end 
 

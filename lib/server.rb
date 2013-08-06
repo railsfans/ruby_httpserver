@@ -1,5 +1,5 @@
 require 'socket'
-require 'nokogiri'
+require './lib/servlet'
 
 module Webserver
 
@@ -38,9 +38,8 @@ module Webserver
             filename = trimmedrequest.chomp
             begin
                displayfile = Webserver::find_file(filename)
-               puts displayfile.gets
                content = displayfile.read()
-               puts Nokogiri::HTML(content).text
+               puts content if filename.empty?
                session.print content 
             rescue Errno::ENOENT
                session.print "File not found"
@@ -51,6 +50,25 @@ module Webserver
 
       def mount(route, servlet)
          @servlets[route] = servlet   
+      end 
+
+      #mount all servlets and match them up with their respective routes
+      def mount_all(basepath)
+         routes = {}
+         
+         #put all the routes into a map of classname/routes 
+         File.open(basepath + '/routes.rb', 'r') do |file_handle|
+            file_handle.each_line do |line|
+               split_line = line.split('=')
+               routes[split_line[1]] = split_line[0]   
+            end
+         end
+          
+         Dir[basepath + '/servlets/*.rb'].each {|file| require file } 
+         #mount ALL the servlets!
+         Webserver::Servlet.descendants.each do |clazz|
+            self.mount(routes[clazz.name], clazz.new)
+         end 
       end 
 
       def route(route, method)
@@ -74,12 +92,16 @@ module Webserver
 
    def self.find_file(path)
       basepath = "./app/"
+      #have to use rb here or else images don't show up properly
+      open_options = 'rb'
       if path.empty?
          full_path = basepath + 'index.html'
+         open_options = 'r'
       else
          full_path = basepath + path
       end 
-      File.open full_path, 'r'
+      found_file = File.open(full_path, open_options)
+      return found_file 
    end 
 
    def self.get_content_type(path)
