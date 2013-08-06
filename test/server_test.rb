@@ -24,6 +24,5 @@ class ServerTest < Test::Unit::TestCase
    def test_servlet_mounts
       server = Webserver::Server.new([]) 
       server.mount_all('./app')
-      puts server.servlets
    end 
 end 
