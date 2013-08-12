@@ -39,7 +39,7 @@ module Webserver
             puts"HTTP/1.1 200/OK\nContent-type:#{ct}\n\n" 
             filename = trimmedrequest.chomp
             begin
-               self.route(filename, method, session)
+               self.route(filename, method, session, parsed_request)
             rescue Errno::ENOENT
                session.print "File not found"
             end
@@ -73,18 +73,18 @@ module Webserver
          end 
       end 
 
-      def route(route, method, session)
+      def route(route, method, session, parsed_request)
          view = 'File not found'
          if @servlets.has_key?(route)
             case method
             when 'GET'
-               view = @servlets[route].do_GET(session)
+               view = @servlets[route].do_GET(session, parsed_request)
             when 'POST'
-               view = @servlets[route].do_POST(session)
+               view = @servlets[route].do_POST(session, parsed_request)
             else
             end 
          elsif route.empty?
-            @servlets['/'].do_GET(session)
+            @servlets['/'].do_GET(session, parsed_request)
          else
             displayfile = Webserver::find_file(route)
             content = displayfile.read()

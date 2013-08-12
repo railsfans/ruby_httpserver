@@ -1,5 +1,6 @@
 require 'erb'
 require 'ostruct'
+require_relative 'utils'
 
 module Webserver
 
@@ -66,7 +67,7 @@ module Webserver
       #If it's a post, then we need to get the body
       headers['Body'] = request.read(headers['Content-Length'].to_i) if method.eql?('POST')
       puts headers['Body'] if headers.has_key?('Body')
-
+   
       return headers
    end 
 
@@ -84,4 +85,5 @@ module Webserver
    def self.render_erb(template, locals)
       ERB.new(template).result(OpenStruct.new(locals).instance_eval { binding })
    end
+
 end 

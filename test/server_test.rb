@@ -25,4 +25,12 @@ class ServerTest < Test::Unit::TestCase
       server = Webserver::Server.new([]) 
       server.mount_all('./app')
    end 
+
+   def test_cookie_parse
+      cookie = 'boo=boo; boo2=boo2'
+      test_val = Webserver::Cookie::parse(cookie)
+      puts test_val
+      expected_val = {:'boo' => 'boo', 'boo2': 'boo2'}
+      assert_equal(expected_val, test_val)
+   end 
 end 
