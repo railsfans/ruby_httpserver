@@ -1,4 +1,4 @@
-require './lib/server'
+Dir['../lib/'].each {|file| require file } 
 require 'test/unit'
 
 class ServerTest < Test::Unit::TestCase
@@ -29,8 +29,17 @@ class ServerTest < Test::Unit::TestCase
    def test_cookie_parse
       cookie = 'boo=boo; boo2=boo2'
       test_val = Webserver::Cookie::parse(cookie)
-      puts test_val
-      expected_val = {:'boo' => 'boo', 'boo2': 'boo2'}
+      expected_val = {'boo' => 'boo', 'boo2' => 'boo2'}
       assert_equal(expected_val, test_val)
    end 
+
+   def test_cookie
+      cookie = Webserver::Cookie.new('schlafen', 'boo')
+      cookie.version = 3
+      test_val = cookie.to_s
+      expected_val = 'schlafen=boo; Version=3'
+      assert_equal(expected_val, test_val)
+      cookie.expires = Time.now
+   end 
+
 end 

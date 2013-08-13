@@ -35,8 +35,7 @@ module Webserver
             #Remove everything except the path from the heading
             trimmedrequest = Webserver::trim_heading(heading, method)
             ct = Webserver::get_content_type(trimmedrequest)
-            session.print "HTTP/1.1 200/OK\nContent-type:#{ct}\n\n"
-            puts"HTTP/1.1 200/OK\nContent-type:#{ct}\n\n" 
+            puts Webserver::get_content_heading(ct)
             filename = trimmedrequest.chomp
             begin
                self.route(filename, method, session, parsed_request)

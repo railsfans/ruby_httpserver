@@ -25,7 +25,7 @@ module Webserver
    def self.get_content_type(path)
       ext = File.extname(path).downcase
       puts ext
-      return "text/html"  if ext.include? ".html" or ext.include? ".htm"
+      return Webserver::HTML_TYPE if ext.include? ".html" or ext.include? ".htm"
       return "text/plain" if ext.include? ".txt"
       return "text/css"   if ext.include? ".css"
       return "image/jpeg" if ext.include? ".jpeg" or ext.include? ".jpg"
@@ -35,7 +35,7 @@ module Webserver
       return "text/plain" if ext.include? ".rb"
       return "text/xml"   if ext.include? ".xml"
       return "text/xml"   if ext.include? ".xsl"
-      return "text/html"
+      return Webserver::HTML_TYPE
    end
 
    #TODO: refactor this using chomp instead of slice
@@ -45,7 +45,7 @@ module Webserver
       #get the heading (first line)
       headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
       method = headers['Heading'].split(' ')[0]
-
+      puts headers['Heading']
       #request is going to be a TCPsocket object 
       #parse the header
       while true
@@ -85,5 +85,4 @@ module Webserver
    def self.render_erb(template, locals)
       ERB.new(template).result(OpenStruct.new(locals).instance_eval { binding })
    end
-
 end 
