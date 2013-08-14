@@ -1,9 +1,20 @@
 ## Webserver
 
-CURRENT TODO: Implement https
+This is my attempt to write a basic web server from scratch. I was inspired to write this after realizing how little I know about web servers despite doing web development every day.
 
-My attempt at writing a web server from scratch. 
+What it can do (for now)
+------------------------
 
-To run, just pull the entire thing and run 'ruby run.rb'. To test out different html/css/img, just modify the contents of the 'app' folder. You can also create your own servlets, and match a servlet with a route via the routes file in 'app'. The app folder contents here is just a sample I use for testing purposes.
+1. Handles GET and POST requests. 
+2. Uses servlets to mess with views with ruby. 
+3. Handles ERB views.
+4. Reads and sets cookies
 
-The majority of the functionality is contained inside server.rb in lib.
+Quick Start
+-----------
+Open up a terminal and type:
+
+1. git clone https://github.com/dm9600/webserver.git
+2. cd webserver
+3. ruby run.rb
+4. Open a browser and type in 'localhost:3333'
