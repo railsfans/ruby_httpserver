@@ -45,7 +45,7 @@ module Webserver
       #get the heading (first line)
       headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
       method = headers['Heading'].split(' ')[0]
-      puts headers['Heading']
+      #puts headers['Heading']
       #request is going to be a TCPsocket object 
       #parse the header
       while true
@@ -53,7 +53,7 @@ module Webserver
          #also remove quotes
          line = request.gets.inspect.gsub /^"|"$/, ''
 
-         puts line
+         #puts line
          #if the line only contains a newline, then the body is about to start
          break if line.eql? '\r\n'
 
@@ -66,7 +66,7 @@ module Webserver
 
       #If it's a post, then we need to get the body
       headers['Body'] = request.read(headers['Content-Length'].to_i) if method.eql?('POST')
-      puts headers['Body'] if headers.has_key?('Body')
+      #puts headers['Body'] if headers.has_key?('Body')
    
       return headers
    end 
