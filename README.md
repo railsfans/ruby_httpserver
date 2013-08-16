@@ -1,4 +1,4 @@
-Webserver
+MagicServer
 =========
 
 This is my attempt to write a basic web server from scratch. I was inspired to write this after realizing how little I know about web servers despite doing web development every day.
