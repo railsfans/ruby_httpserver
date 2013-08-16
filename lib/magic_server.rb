@@ -6,6 +6,7 @@ require_relative 'magic_server/server_constants'
 require_relative 'magic_server/cookie'
 require_relative 'magic_server/errors'
 require_relative 'magic_server/utils'
+require_relative 'magic_server/logger_util'
 
 module MagicServer
 
@@ -22,6 +23,7 @@ module MagicServer
             @host = args[1] if args[0].include? 'h'
             @port = args[1] if args[0].include? "p"
          end 
+         @logger = LoggerUtil.instance
       end 
 
       def start
@@ -32,6 +34,7 @@ module MagicServer
             #parse the entire request into a key/val map
             parsed_request = MagicServer::parse_http_request(session)
             heading = parsed_request['Heading']
+            @logger.info(heading)
 
             #Get the method from the heading
             method = heading.split(' ')[0]
