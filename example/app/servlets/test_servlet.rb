@@ -1,4 +1,4 @@
-require '../lib/magic_server'
+require 'magic_server'
 
 class TestServlet < MagicServer::Servlet
    def do_GET(session, request)
