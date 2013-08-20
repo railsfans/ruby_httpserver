@@ -12,7 +12,6 @@ include MagicServer
 module MagicServer
 
    class Server
-      extend MagicServer
       attr_accessor :port, :host, :servlets
 
       # args is an array passed in from run.rb
@@ -28,7 +27,8 @@ module MagicServer
          @logger = LoggerUtil.instance
       end 
       
-      # This is where the application really begins
+      # This is where the application really begins. This method
+      # creates the 
       def start
          puts "Server created at #{@host} and port #{@port}"
 
