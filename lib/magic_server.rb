@@ -8,11 +8,11 @@ require_relative 'magic_server/errors'
 require_relative 'magic_server/utils'
 require_relative 'magic_server/logger_util'
 include MagicServer
-extend MagicServer
 
 module MagicServer
 
    class Server
+      extend MagicServer
       attr_accessor :port, :host, :servlets
 
       # args is an array passed in from run.rb
@@ -27,32 +27,35 @@ module MagicServer
          end 
          @logger = LoggerUtil.instance
       end 
-
+      
+      # This is where the application really begins
       def start
-         @server = TCPServer.new(@host, @port)
          puts "Server created at #{@host} and port #{@port}"
+
          self.mount_all(MagicServer::BASE_PATH)
-         while (session = @server.accept)
-            #parse the entire request into a key/val map
-            parsed_request = MagicServer::parse_http_request(session)
+
+         # Create a server loop
+         Socket.tcp_server_loop(@host, @port) do |connection|
+            # parse the entire request into a key/val map
+            parsed_request = MagicServer::parse_http_request(connection)
             heading = parsed_request['Heading']
             @logger.info(heading)
 
-            #Get the method from the heading
+            # Get the method from the heading
             method = heading.split(' ')[0]
 
-            #Remove everything except the path from the heading
+            # Remove everything except the path from the heading
             parsed_request = MagicServer::parse_heading(heading, method)
             route = parsed_request[:route]
             puts route
             begin
-               self.route(route, method, session, parsed_request)
+               self.route(route, method, connection, parsed_request)
             rescue => exception
                puts exception.to_s
                puts exception.backtrace
-               session.print "File not found"
+               connection.print "File not found"
             end
-            session.close
+            connection.close
          end
       end 
 
@@ -82,6 +85,9 @@ module MagicServer
          end 
       end 
 
+      # If the requested route is a static file (like javascript, css, or image)
+      # then the route will be handled in the else condition. If the route is 
+      # found on the servlets map, then handle it with a servlet
       def route(route, method, session, parsed_request)
          view = 'File not found'
          if @servlets.has_key?(route)
@@ -95,9 +101,10 @@ module MagicServer
          elsif route.to_s.empty?
             @servlets['/'].do_GET(session, parsed_request)
          else
+            # All static file requests go here
             content_type = MagicServer::content_type(MagicServer::get_content_type(route))
-            response = '' << HTTP_SUCCESS << content_type
-            puts response
+            response = '' << HTTP_SUCCESS << content_type << "\n"
+            #found_file = MagicServer::find_file(route).read
             response << MagicServer::find_file(route).read
             session.print(response)
          end 

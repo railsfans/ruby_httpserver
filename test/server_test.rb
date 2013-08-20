@@ -2,9 +2,13 @@ Dir['../lib/'].each {|file| require file }
 require 'test/unit'
 
 class ServerTest < Test::Unit::TestCase
-   def test_trim_request
-      test_header = 'GET /boo HTTP/1.1' 
-      assert_equal 'boo', MagicServer::trim_heading(test_header, 'GET')
+
+   def test_parse_heading
+      heading = "erbtest?boo=hello\n"
+      method = 'GET'
+      parsed_heading = MagicServer::parse_heading(heading,method)
+      assert_equal parsed_heading[:route], 'erbtest'
+      assert_equal parsed_heading[:arguments], {"boo"=>"hello"}
    end 
 
    def test_get_content_type
@@ -23,7 +27,7 @@ class ServerTest < Test::Unit::TestCase
 
    def test_servlet_mounts
       server = MagicServer::Server.new([]) 
-      server.mount_all('./app')
+      server.mount_all(MagicServer::BASE_PATH)
    end 
 
    def test_cookie_parse

@@ -4,17 +4,24 @@ require_relative 'utils'
 
 module MagicServer
 
-   def self.trim_heading(heading, method)
-      heading.gsub(/#{method}\ \//, '').gsub(/\ HTTP.*/, '')
-   end 
-
+   # This method takes a url like this: /erbtest?boo=hello
+   # and turns it into a map with :route and :arguments
+   # as keys. /erbtest would be :route, and boo => hello
+   # would be :arguments. The reason why this is done is
+   # so that the route and the parameters can be separated
    def self.parse_heading(heading, method)
       ret = {}
       arguments = {}
+
+      # Remove all the HTTP boilerplate
       heading.gsub!(/#{method}\ \//, '').gsub!(/\ HTTP.*/, '')
       heading.chomp!
+
+      #Split up the heading between the routes and the arguments
       split_heading = heading.split('?')
       ret[:route] = split_heading[0]
+
+      #Parse the arguments into a map
       if split_heading.size > 1
          split_heading[1].split('&').each do |key_val|
             key_and_val = key_val.split('=')
@@ -25,8 +32,13 @@ module MagicServer
       ret
    end 
 
+   # Fetch a file from the file system. the 'b' in open options
+   # stands for binary file mode. The reason this is used is 
+   # because certain file types, like images, don't read properly
+   # unless you use it. I'm not exactly sure why this is the case,
+   # so it's definitely something to look into
    def self.find_file(path)
-      #have to use rb here or else images don't show up properly
+      # TODO: just use rb for everything
       open_options = 'rb'
       if path.empty?
          full_path = MagicServer::BASE_PATH + 'index.html'
@@ -38,6 +50,7 @@ module MagicServer
       return found_file 
    end 
 
+   # Generates the "Content-Type" heading based on the path 
    def self.get_content_type(path)
       ext = File.extname(path).downcase
       return MagicServer::HTML_TYPE if ext.include? ".html" or ext.include? ".htm"
@@ -50,6 +63,7 @@ module MagicServer
       return "text/plain" if ext.include? ".rb"
       return "text/xml"   if ext.include? ".xml"
       return "text/xml"   if ext.include? ".xsl"
+      return 'application/javascript' if ext.include?('.js')
       return MagicServer::HTML_TYPE
    end
 
@@ -58,9 +72,10 @@ module MagicServer
       headers = {}
 
       #get the heading (first line)
-      headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
+      #headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
+      headers['Heading'] = request.gets.gsub /^"|"$/, ''.chomp
       method = headers['Heading'].split(' ')[0]
-      #puts headers['Heading']
+
       #request is going to be a TCPsocket object 
       #parse the header
       while true
@@ -68,7 +83,6 @@ module MagicServer
          #also remove quotes
          line = request.gets.inspect.gsub /^"|"$/, ''
 
-         #puts line
          #if the line only contains a newline, then the body is about to start
          break if line.eql? '\r\n'
 
