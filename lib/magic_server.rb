@@ -45,7 +45,9 @@ module MagicServer
             filename = trimmedrequest.chomp
             begin
                self.route(filename, method, session, parsed_request)
-            rescue Errno::ENOENT
+            rescue => exception
+               puts exception.to_s
+               puts exception.backtrace
                session.print "File not found"
             end
             session.close

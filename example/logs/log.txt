@@ -113,3 +113,31 @@ I, [2013-08-16T16:46:22.403554 #4568]  INFO -- : c:/Documents and Settings/dmai/
 
 I, [2013-08-16T16:46:23.183144 #4568]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/webserver/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
 
+I, [2013-08-19T20:34:58.833021 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest?firstname=asdf&lastname=asdf HTTP/1.1
+
+I, [2013-08-19T20:34:58.885430 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:35:01.924860 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T20:35:01.996519 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T20:35:01.996819 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T20:35:02.055035 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:35:02.111323 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:35:04.642298 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:35:05.258142 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest?firstname=asdf&lastname=asdf HTTP/1.1
+
+I, [2013-08-19T20:35:05.306680 #16643]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:37:13.108251 #16741]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest?firstname=asdf&lastname=asdf HTTP/1.1
+
+I, [2013-08-19T20:37:13.163584 #16741]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T20:38:56.790830 #16774]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest?firstname=asdf&lastname=asdf HTTP/1.1
+
+I, [2013-08-19T20:38:56.849671 #16774]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+

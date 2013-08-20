@@ -1,4 +1,4 @@
-require 'magic_server'
+require '../lib/magic_server'
 require 'erb'
 include MagicServer
 
