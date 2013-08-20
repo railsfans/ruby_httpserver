@@ -8,6 +8,23 @@ module MagicServer
       heading.gsub(/#{method}\ \//, '').gsub(/\ HTTP.*/, '')
    end 
 
+   def self.parse_heading(heading, method)
+      ret = {}
+      arguments = {}
+      heading.gsub!(/#{method}\ \//, '').gsub!(/\ HTTP.*/, '')
+      heading.chomp!
+      split_heading = heading.split('?')
+      ret[:route] = split_heading[0]
+      if split_heading.size > 1
+         split_heading[1].split('&').each do |key_val|
+            key_and_val = key_val.split('=')
+            arguments[key_and_val[0]] = key_and_val[1]
+         end 
+      end 
+      ret[:arguments] = arguments
+      ret
+   end 
+
    def self.find_file(path)
       #have to use rb here or else images don't show up properly
       open_options = 'rb'
@@ -64,7 +81,8 @@ module MagicServer
 
       #If it's a post, then we need to get the body
       headers['Body'] = request.read(headers['Content-Length'].to_i) if method.eql?('POST')
-      #puts headers['Body'] if headers.has_key?('Body')
+      #headers['Body'] = request.readpartial(1024 * 16)
+      puts headers['Body'] if headers.has_key?('Body')
    
       return headers
    end 

@@ -141,3 +141,339 @@ I, [2013-08-19T20:38:56.790830 #16774]  INFO -- : /home/dm/magic_server/lib/magi
 
 I, [2013-08-19T20:38:56.849671 #16774]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
 
+I, [2013-08-19T21:06:10.478864 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T21:06:10.555964 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T21:06:10.556265 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T21:06:10.599819 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:06:10.705297 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:06:24.779361 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T21:06:24.831224 #17210]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:08:29.734797 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T21:08:29.785760 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:08:32.021200 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T21:08:32.083556 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:08:48.888000 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T21:08:48.943929 #17258]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:09:40.687139 #17261]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T21:09:40.750908 #17261]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T21:10:13.000939 #17264]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T22:03:17.012239 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T22:03:17.079089 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:03:21.403492 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbservlet HTTP/1.1
+
+I, [2013-08-19T22:03:21.452998 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:03:26.305218 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T22:03:26.380434 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:03:26.641697 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:03:29.902800 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:03:29.982214 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:03:30.141785 #17910]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:04:40.422946 #17930]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:05:17.503970 #17930]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:07:01.535799 #17935]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:08:02.540266 #17975]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:10:32.959496 #17988]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:11:35.907064 #17993]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:15:09.440472 #18013]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:15:09.491644 #18013]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:15:55.698805 #18017]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:15:55.752269 #18017]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:16:31.446588 #18019]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:41:13.861731 #18019]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:41:31.777221 #18204]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:41:31.833082 #18204]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:43:30.183706 #18246]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:43:30.235906 #18246]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:55:58.529856 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T22:55:58.583508 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T22:55:58.583802 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T22:55:58.592521 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T22:55:58.678139 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:56:03.159027 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T22:56:03.236540 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T22:56:03.237859 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T22:56:03.303106 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:56:03.421461 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T22:56:05.685123 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T22:56:05.743525 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:00:08.709629 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:00:08.776414 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:00:08.776701 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:00:08.777987 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:00:08.836895 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:00:13.669979 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:00:13.720642 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:00:13.721476 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:00:13.724207 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:00:41.409670 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:00:41.481478 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:00:41.481826 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:00:41.534070 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:00:45.966602 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T23:00:46.016577 #18299]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:00:55.069209 #18395]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T23:00:55.126808 #18395]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:01:36.235791 #18395]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T23:01:36.287150 #18395]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:01:45.510133 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' POST /erbtest HTTP/1.1
+
+I, [2013-08-19T23:01:45.557127 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:01:51.096559 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:01:51.142316 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:01:51.951730 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:01:52.050984 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:02:09.107926 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:02:09.136094 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:02:09.136769 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:02:09.137345 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:02:09.270699 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:02:09.271724 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:02:14.405921 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:02:14.414761 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:02:14.415636 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:02:14.470229 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:04:21.118266 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:04:21.188384 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:04:21.188658 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:04:21.189647 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:04:21.303712 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:04:33.971634 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:04:34.023068 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:04:34.023333 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:04:34.025921 #18398]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:09:13.523895 #18543]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:09:13.586767 #18543]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:09:13.587098 #18543]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:09:13.590994 #18543]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:37:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:12:43.495448 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:12:43.535441 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:12:43.535742 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:12:43.537786 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:13:10.250483 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:13:10.270563 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:13:10.271296 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:13:10.272154 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:13:10.316386 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:13:10.329156 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:13:15.536757 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:13:15.545860 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:13:15.546807 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:13:17.685779 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:13:17.694292 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:13:17.694957 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:13:17.695482 #18551]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:13:32.807860 #18667]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:13:32.823326 #18667]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:13:32.823799 #18667]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:13:32.824483 #18667]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:14:03.052936 #18675]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:14:03.075477 #18675]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:14:03.075986 #18675]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:14:03.076582 #18675]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:14:37.758791 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:14:55.488694 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:14:55.553349 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:14:55.553675 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:14:55.598654 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:14:55.628291 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /erbtest HTTP/1.1
+
+I, [2013-08-19T23:14:55.690860 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:14:55.691434 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:14:55.737579 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:15:13.519537 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:15:13.579110 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:15:13.579402 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:15:13.582083 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:15:15.654105 #18680]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:38:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:18:05.334664 #18719]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:18:05.425144 #18719]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:18:57.642527 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:18:57.699287 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:18:57.699813 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:18:57.701956 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:18:57.731675 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:19:02.206079 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:19:02.241218 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:19:02.241535 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:19:02.257785 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:19:02.294931 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:19:02.752409 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:19:02.783161 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:19:02.784237 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:19:02.801563 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:19:02.839966 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /favicon.ico HTTP/1.1
+
+I, [2013-08-19T23:19:04.892428 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:19:04.908766 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:19:04.909060 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:19:04.909607 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:19:04.972421 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:19:15.494385 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET / HTTP/1.1
+
+I, [2013-08-19T23:19:15.551701 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /css/application.css HTTP/1.1
+
+I, [2013-08-19T23:19:15.552306 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /js/application.js HTTP/1.1
+
+I, [2013-08-19T23:19:15.556759 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /img/avatar.JPG HTTP/1.1
+
+I, [2013-08-19T23:19:22.513090 #18725]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:39:in `start' GET /favicon.ico HTTP/1.1
+

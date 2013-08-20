@@ -1,10 +1,10 @@
 module MagicServer
    class Servlet
       def do_GET(session, request)
-         raise HTTPStatus::NotFound, "not found."
+         raise Errno::ENOENT
       end
       def do_POST(session, request)
-         raise HTTPStatus::NotFound, "not found."
+         raise Errno::ENOENT
       end 
       def self.descendants
          ObjectSpace.each_object(Class).select { |clazz| clazz < self }

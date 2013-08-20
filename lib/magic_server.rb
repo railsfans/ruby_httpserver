@@ -7,6 +7,8 @@ require_relative 'magic_server/cookie'
 require_relative 'magic_server/errors'
 require_relative 'magic_server/utils'
 require_relative 'magic_server/logger_util'
+include MagicServer
+extend MagicServer
 
 module MagicServer
 
@@ -40,11 +42,11 @@ module MagicServer
             method = heading.split(' ')[0]
 
             #Remove everything except the path from the heading
-            trimmedrequest = MagicServer::trim_heading(heading, method)
-            ct = MagicServer::get_content_type(trimmedrequest)
-            filename = trimmedrequest.chomp
+            parsed_request = MagicServer::parse_heading(heading, method)
+            route = parsed_request[:route]
+            puts route
             begin
-               self.route(filename, method, session, parsed_request)
+               self.route(route, method, session, parsed_request)
             rescue => exception
                puts exception.to_s
                puts exception.backtrace
@@ -90,12 +92,14 @@ module MagicServer
                view = @servlets[route].do_POST(session, parsed_request)
             else
             end 
-         elsif route.empty?
+         elsif route.to_s.empty?
             @servlets['/'].do_GET(session, parsed_request)
          else
-            displayfile = MagicServer::find_file(route)
-            content = displayfile.read()
-            session.print content 
+            content_type = MagicServer::content_type(MagicServer::get_content_type(route))
+            response = '' << HTTP_SUCCESS << content_type
+            puts response
+            response << MagicServer::find_file(route).read
+            session.print(response)
          end 
          return view
       end 
