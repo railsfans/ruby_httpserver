@@ -1,4 +1,4 @@
-Dir['../lib/'].each {|file| require file } 
+require '../lib/magic_server'
 require 'test/unit'
 
 class ServerTest < Test::Unit::TestCase
@@ -27,7 +27,7 @@ class ServerTest < Test::Unit::TestCase
 
    def test_servlet_mounts
       server = MagicServer::Server.new([]) 
-      server.mount_all(MagicServer::BASE_PATH)
+      server.mount_all('../example')
    end 
 
    def test_cookie_parse

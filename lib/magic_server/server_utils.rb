@@ -14,7 +14,8 @@ module MagicServer
       arguments = {}
 
       # Remove all the HTTP boilerplate
-      heading.gsub!(/#{method}\ \//, '').gsub!(/\ HTTP.*/, '')
+      heading.gsub!(/#{method}\ \//, '')
+      heading.gsub!(/\ HTTP.*/, '')
       heading.chomp!
 
       #Split up the heading between the routes and the arguments
@@ -94,9 +95,9 @@ module MagicServer
       end 
 
       #If it's a post, then we need to get the body
-      headers['Body'] = request.read(headers['Content-Length'].to_i) if method.eql?('POST')
-      #headers['Body'] = request.readpartial(1024 * 16)
-      puts headers['Body'] if headers.has_key?('Body')
+      if method.eql?('POST')
+         headers['Body'] = request.read(headers['Content-Length'].to_i) 
+      end 
    
       return headers
    end 
