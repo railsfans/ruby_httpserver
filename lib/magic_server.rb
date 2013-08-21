@@ -38,7 +38,7 @@ module MagicServer
          Socket.tcp_server_loop(@host, @port) do |connection|
             # parse the entire request into a key/val map
             parsed_request = MagicServer::parse_http_request(connection)
-            heading = parsed_request['Heading']
+            heading = parsed_request['Request-Line']
             @logger.info(heading)
 
             # Get the method from the heading

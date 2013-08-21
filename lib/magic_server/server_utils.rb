@@ -39,11 +39,9 @@ module MagicServer
    # unless you use it. I'm not exactly sure why this is the case,
    # so it's definitely something to look into
    def self.find_file(path)
-      # TODO: just use rb for everything
       open_options = 'rb'
       if path.empty?
          full_path = MagicServer::BASE_PATH + 'index.html'
-         open_options = 'r'
       else
          full_path = MagicServer::BASE_PATH + path
       end 
@@ -68,38 +66,31 @@ module MagicServer
       return MagicServer::HTML_TYPE
    end
 
-   #TODO: refactor this using chomp instead of slice
+   # Takes a HTTP request and parses it into a map that's keyed
+   # by the title of the heading and the heading itself
    def self.parse_http_request(request)
       headers = {}
 
-      #get the heading (first line)
-      #headers['Heading'] = request.gets.gsub /^"|"$/, ''.tap{|val|val.slice!('\r\n')}.strip
-      headers['Heading'] = request.gets.gsub /^"|"$/, ''.chomp
-      method = headers['Heading'].split(' ')[0]
+      # Need to use readpartial instead of read because read will
+      # block due to the lack of a EOF
+      request_str = request.readpartial(1024*16)
+      arrayed_request = request_str.split(/\r?\n/)
+      headers['Request-Line'] = arrayed_request.shift
 
-      #request is going to be a TCPsocket object 
-      #parse the header
-      while true
-         #do inspect to get the escape characters as literals
-         #also remove quotes
-         line = request.gets.inspect.gsub /^"|"$/, ''
-
-         #if the line only contains a newline, then the body is about to start
-         break if line.eql? '\r\n'
-
-         label = line[0..line.index(':')-1]
-
-         #get rid of the escape characters
-         val = line[line.index(':')+1..line.length].tap{|val|val.slice!('\r\n')}.strip
-         headers[label] = val
+      # If there's a blank line, that means that there's
+      # a body on the last line
+      if arrayed_request.index { |line| line.strip.empty? }
+         headers['Body'] = arrayed_request.pop(2)[1] 
       end 
 
-      #If it's a post, then we need to get the body
-      if method.eql?('POST')
-         headers['Body'] = request.read(headers['Content-Length'].to_i) 
-      end 
-   
-      return headers
+      # For everything else, split on the first colon, and
+      # dump it all into the headers map
+      arrayed_request.inject(headers) {|headers, line|
+         split = line.split(':')
+         headers[split.shift] = split.join(':').strip
+         headers
+      }
+      headers
    end 
 
    #takes the post body and makes it into a key/val map
