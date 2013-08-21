@@ -14,7 +14,7 @@ This is my attempt to write a basic web server from scratch. I was inspired to w
 
 Open up a terminal and type:
 
-1. git clone https://github.com/dm9600/webserver.git
-2. cd example
+1. git clone https://github.com/sayonarauniverse/magic_server.git
+2. cd magic_server && cd example
 3. ruby run (or if you're windows, just 'run')
 4. Open a browser and type in 'localhost:3333'
