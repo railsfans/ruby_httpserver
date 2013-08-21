@@ -1,5 +1,6 @@
 /comparison
 todo.txt
 *.gem
-/logs/*
+/exampe/logs/*
 /app
+*.txt
