@@ -1,1 +1,12 @@
 
+I, [2013-08-28T21:38:03.194517 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET / HTTP/1.1
+I, [2013-08-28T21:38:03.298340 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-08-28T21:38:03.309265 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-08-28T21:38:03.324999 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-08-28T21:38:04.529561 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-08-28T21:38:06.477575 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /adsfsadf HTTP/1.1
+I, [2013-08-28T21:38:06.527950 #6798]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-08-28T21:38:49.525799 #6816]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /adsfsadf HTTP/1.1
+I, [2013-08-28T21:40:58.894664 #6881]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /adsfsadf HTTP/1.1
+I, [2013-08-28T21:41:17.851652 #6883]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /adsfsadf HTTP/1.1
+I, [2013-08-28T21:41:41.873344 #6886]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:42:in `block in start' GET /adsfsadf HTTP/1.1
