@@ -5,7 +5,7 @@ class TestServlet < MagicServer::Servlet
       response = ''
       response << MagicServer::HTTP_SUCCESS
       response << MagicServer::content_type(HTML_TYPE)
-      response << MagicServer::find_file('').read    
+      response << MagicServer::find_file('')
       session.print(response)
    end 
 end 

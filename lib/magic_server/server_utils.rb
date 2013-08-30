@@ -45,7 +45,10 @@ module MagicServer
       else
          full_path = MagicServer::BASE_PATH + path
       end 
-      found_file = File.open(full_path, open_options)
+      found_file = ''
+      if File.exists? full_path
+        found_file = File.open(full_path, open_options).read
+      end 
       return found_file 
    end 
 

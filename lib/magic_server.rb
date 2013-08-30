@@ -69,14 +69,16 @@ module MagicServer
       routes = {}
 
       #put all the routes into a map of classname/routes 
-      File.open(basepath + '/routes', 'r') do |file_handle|
-        file_handle.each_line do |line|
-          split_line = line.split('=')
-          #chomp to get rid of the newline
-          routes[split_line[1].chomp] = split_line[0]   
+      full_path = basepath + '/routes' 
+      if File.exists? full_path
+        File.open(basepath + '/routes', 'r') do |file_handle|
+          file_handle.each_line do |line|
+            split_line = line.split('=')
+            #chomp to get rid of the newline
+            routes[split_line[1].chomp] = split_line[0]   
+          end
         end
-      end
-
+      end 
       #load all the application servlets
       Dir[MagicServer::BASE_PATH + '/servlets/*.rb'].each {|file| require file } 
 
@@ -105,8 +107,7 @@ module MagicServer
         # All static file requests go here
         content_type = MagicServer::content_type(MagicServer::get_content_type(route))
         response = '' << HTTP_SUCCESS << content_type << "\n"
-        #found_file = MagicServer::find_file(route).read
-        response << MagicServer::find_file(route).read
+        response << MagicServer::find_file(route)
         session.print(response)
       end 
       return view
