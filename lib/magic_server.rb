@@ -15,7 +15,7 @@ module MagicServer
     attr_accessor :port, :host, :servlets
 
     # args is an array passed in from run.rb
-    def initialize(args)
+    def initialize(args = [])
       @command = args[0]
       @port = 3333
       @host = '127.0.0.1'
@@ -105,8 +105,9 @@ module MagicServer
         @servlets['/'].do_GET(session, parsed_request)
       else
         # All static file requests go here
-        content_type = MagicServer::content_type(MagicServer::get_content_type(route))
-        response = '' << HTTP_SUCCESS << content_type << "\n"
+        raw_content_type = MagicServer::get_content_type(route)
+        content_type = MagicServer::content_type(raw_content_type)
+        response = '' << HTTP_SUCCESS << content_type << "\n" 
         response << MagicServer::find_file(route)
         session.print(response)
       end 
