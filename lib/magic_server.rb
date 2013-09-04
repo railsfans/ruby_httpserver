@@ -36,27 +36,29 @@ module MagicServer
 
       # Create a server loop
       Socket.tcp_server_loop(@host, @port) do |connection|
-        # parse the entire request into a key/val map
-        parsed_request = MagicServer::parse_http_request(connection)
-        heading = parsed_request['Request-Line']
-        @logger.info(heading)
+        Thread.start(connection) do |connection|
+          # parse the entire request into a key/val map
+          parsed_request = MagicServer::parse_http_request(connection)
+          heading = parsed_request['Request-Line']
+          @logger.info(heading)
 
-        # Get the method from the heading
-        method = heading.split(' ')[0]
+          # Get the method from the heading
+          method = heading.split(' ')[0]
 
-        # Remove everything except the path from the heading
-        parsed_request = MagicServer::parse_heading(heading, method)
-        route = parsed_request[:route]
-        puts route
-        begin
-          self.route(route, method, connection, parsed_request)
-        rescue Errno::ENOENT => e
-          # Catch file not founds
-          puts e.to_s
-          puts e.backtrace
-          connection.print "File not found"
-        end
-        connection.close
+          # Remove everything except the path from the heading
+          parsed_request = MagicServer::parse_heading(heading, method)
+          route = parsed_request[:route]
+          puts route
+          begin
+            self.route(route, method, connection, parsed_request)
+          rescue Errno::ENOENT => e
+            # Catch file not founds
+            puts e.to_s
+            puts e.backtrace
+            connection.print "File not found"
+          end
+          connection.close
+        end 
       end
     end 
 
