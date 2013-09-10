@@ -1,4 +1,5 @@
 require 'socket'
+require 'openssl'
 
 require_relative 'magic_server/servlet'
 require_relative 'magic_server/server_utils'
@@ -20,9 +21,15 @@ module MagicServer
       @port = 3333
       @host = '127.0.0.1'
       @servlets = {}
+      @request = { server_name: @host.to_s, server_port: @port.to_s,
+        server_protocol: SERVER_PROTOCOL }
       if args[0].is_a?(String)
         @host = args[1] if args[0].include? 'h'
-        @port = args[1] if args[0].include? "p"
+        @port = args[1] if args[0].include? 'p'
+        if args[0].include? 's'
+          @ssl = true 
+          @port = 443
+        end 
       end 
       @logger = LoggerUtil.instance
     end 
@@ -33,24 +40,35 @@ module MagicServer
       puts "Server created at #{@host} and port #{@port}"
 
       self.mount_all(MagicServer::BASE_PATH)
+       
+      server = TCPServer.new @host, @port
+
+      if @ssl
+        ctx = OpenSSL::SSL::SSLContext.new
+        ctx.cert = OpenSSL::X509::Certificate.new(File.open(CERT_PATH))
+        ctx.key = OpenSSL::PKey::RSA.new(File.open(KEY_PATH))
+        server = OpenSSL::SSL::SSLServer.new(server, ctx)
+      end 
 
       # Create a server loop
-      Socket.tcp_server_loop(@host, @port) do |connection|
+      #Socket.tcp_server_loop(@host, @port) do |connection|
+      while connection = server.accept
         Thread.start(connection) do |connection|
           # parse the entire request into a key/val map
-          parsed_request = MagicServer::parse_http_request(connection)
-          heading = parsed_request['Request-Line']
+          request = @request.update MagicServer::parse_http_request(connection)
+          heading = request['Request-Line']
           @logger.info(heading)
 
           # Get the method from the heading
           method = heading.split(' ')[0]
 
           # Remove everything except the path from the heading
-          parsed_request = MagicServer::parse_heading(heading, method)
-          route = parsed_request[:route]
+          route = MagicServer::parse_heading(heading, method)[:route] 
+          request[:path] = route.to_s
+          request[:query_string] = heading.split(' ')[1].split('?')[1].to_s
           puts route
           begin
-            self.route(route, method, connection, parsed_request)
+            self.route(route, method, connection, request)
           rescue Errno::ENOENT => e
             # Catch file not founds
             puts e.to_s
@@ -80,31 +98,31 @@ module MagicServer
             routes[split_line[1].chomp] = split_line[0]   
           end
         end
-      end 
-      #load all the application servlets
-      Dir[MagicServer::BASE_PATH + '/servlets/*.rb'].each {|file| require file } 
+        #load all the application servlets
+        Dir[MagicServer::BASE_PATH + '/servlets/*.rb'].each {|file| require file } 
 
-      #mount ALL the servlets!
-      MagicServer::Servlet.descendants.each do |clazz|
-        self.mount(routes[clazz.name], clazz.new)
+        #mount ALL the servlets!
+        MagicServer::Servlet.descendants.each do |clazz|
+          self.mount(routes[clazz.name], clazz.new)
+        end 
       end 
     end 
 
     # If the requested route is a static file (like javascript, css, or image)
     # then the route will be handled in the else condition. If the route is 
     # found on the servlets map, then handle it with a servlet
-    def route(route, method, session, parsed_request)
+    def route(route, method, session, request)
       view = 'File not found'
       if @servlets.has_key?(route)
         case method
         when 'GET'
-          view = @servlets[route].do_GET(session, parsed_request)
+          view = @servlets[route].do_GET(session, request)
         when 'POST'
-          view = @servlets[route].do_POST(session, parsed_request)
+          view = @servlets[route].do_POST(session, request)
         else
         end 
       elsif route.to_s.empty?
-        @servlets['/'].do_GET(session, parsed_request)
+        @servlets['/'].do_GET(session, request)
       else
         # All static file requests go here
         raw_content_type = MagicServer::get_content_type(route)

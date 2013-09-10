@@ -18,3 +18,5 @@ Open up a terminal and type:
 2. cd magic_server && cd example
 3. ruby run (or if you're windows, just 'run')
 4. Open a browser and type in 'localhost:3333'
+
+Todo: Fix SSL

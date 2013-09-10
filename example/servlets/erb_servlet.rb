@@ -4,6 +4,7 @@ include MagicServer
 
 class ERBServlet < MagicServer::Servlet
   def do_GET(session, request)
+    puts request
     view = MagicServer::find_file('views/test.html.erb')
     response = ''
     response << HTTP_SUCCESS
