@@ -1382,3 +1382,61 @@ I, [2013-09-10T17:14:56.942886 #8128]  INFO -- : c:/Documents and Settings/dmai/
 I, [2013-09-10T17:14:57.130387 #8128]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:55:in `block in start' GET /favicon.ico HTTP/1.1
 I, [2013-09-10T17:14:57.192888 #8128]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:55:in `block in start' GET /favicon.ico HTTP/1.1
 I, [2013-09-10T17:28:40.963785 #528]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:27:10.608065 #3004]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:28:10.264697 #5204]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:29:51.202843 #4196]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:30:53.078239 #5680]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:30:55.797006 #5680]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:31:23.547184 #3756]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:31:32.844119 #3756]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:32:47.047718 #4988]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:32:49.344608 #4988]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:33:24.126081 #6572]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:33:25.922967 #6572]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T10:34:03.188831 #4212]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T14:34:02.432567 #5796]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' G
+I, [2013-09-11T17:09:23.514467 #2808]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:09:23.607983 #2808]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:09:23.623569 #2808]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:09:23.670327 #2808]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:09:23.810601 #2808]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:11:11.743651 #7216]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:11:11.774823 #7216]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:11:11.774823 #7216]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:11:11.790409 #7216]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:21:04.931225 #4872]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:21:04.962397 #4872]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:21:04.977983 #4872]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:21:04.977983 #4872]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:21:58.328861 #6512]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:21:58.391205 #6512]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:21:58.391205 #6512]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:21:58.406791 #6512]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:23:30.972045 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:23:31.003217 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:23:31.003217 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:23:31.018803 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:23:47.290587 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /erbtest HTTP/1.1
+I, [2013-09-11T17:23:47.352931 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:23:47.352931 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:23:47.384103 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:23:50.049309 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' POST /erbtest HTTP/1.1
+I, [2013-09-11T17:23:50.127239 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:25:23.565309 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET / HTTP/1.1
+I, [2013-09-11T17:25:23.674411 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:25:23.705583 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:25:23.721169 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /img/avatar.JPG HTTP/1.1
+I, [2013-09-11T17:25:23.908201 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:26:22.558319 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /erbtest HTTP/1.1
+I, [2013-09-11T17:26:22.620663 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:26:22.620663 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:26:22.667421 #6980]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:27:46.831821 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /erbtest HTTP/1.1
+I, [2013-09-11T17:27:46.909751 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /css/application.css HTTP/1.1
+I, [2013-09-11T17:27:46.909751 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /js/application.js HTTP/1.1
+I, [2013-09-11T17:27:46.972095 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:27:53.518215 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' POST /erbtest HTTP/1.1
+I, [2013-09-11T17:27:53.580559 #1436]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' GET /favicon.ico HTTP/1.1
+I, [2013-09-11T17:28:16.632253 #6812]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' POST /erbtest HTTP/1.1
+I, [2013-09-11T17:28:44.079199 #6812]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' POST /erbtest HTTP/1.1
+I, [2013-09-11T17:33:58.339717 #5116]  INFO -- : c:/Documents and Settings/dmai/My Documents/Not Work Related/magic_server/lib/magic_server.rb:60:in `block in start' POST /erbtest HTTP/1.1

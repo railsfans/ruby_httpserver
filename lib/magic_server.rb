@@ -37,7 +37,6 @@ module MagicServer
     # This is where the application really begins. This method
     # creates the 
     def start
-      puts "Server created at #{@host} and port #{@port}"
 
       self.mount_all(MagicServer::BASE_PATH)
        
@@ -48,17 +47,17 @@ module MagicServer
         ctx.cert = OpenSSL::X509::Certificate.new(File.open(CERT_PATH))
         ctx.key = OpenSSL::PKey::RSA.new(File.open(KEY_PATH))
         server = OpenSSL::SSL::SSLServer.new(server, ctx)
+        puts 'boo'
       end 
 
       # Create a server loop
-      #Socket.tcp_server_loop(@host, @port) do |connection|
+      puts "Server created at #{@host} and port #{@port}"
       while connection = server.accept
         Thread.start(connection) do |connection|
           # parse the entire request into a key/val map
           request = @request.update MagicServer::parse_http_request(connection)
           heading = request['Request-Line']
           @logger.info(heading)
-
           # Get the method from the heading
           method = heading.split(' ')[0]
 

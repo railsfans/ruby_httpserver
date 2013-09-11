@@ -75,8 +75,15 @@ module MagicServer
 
     # Need to use readpartial instead of read because read will
     # block due to the lack of a EOF
-    request_str = request.readpartial(1024*16)
+    request_str = ''
+    until (line = request.gets) && (line.inspect.eql?('"\r\n"'))
+      request_str << line  
+    end
+
+    puts request.readpartial(1024*16).inspect
+
     arrayed_request = request_str.split(/\r?\n/)
+    puts arrayed_request.to_s
     headers['Request-Line'] = arrayed_request.shift
 
     # If there's a blank line, that means that there's
@@ -92,6 +99,7 @@ module MagicServer
       headers[split.shift] = split.join(':').strip
       headers
     }
+    puts headers.to_s
     headers
   end 
 
