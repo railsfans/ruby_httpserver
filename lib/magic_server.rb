@@ -8,6 +8,7 @@ require_relative 'magic_server/cookie'
 require_relative 'magic_server/errors'
 require_relative 'magic_server/utils'
 require_relative 'magic_server/logger_util'
+require_relative 'magic_server/ssl'
 include MagicServer
 
 module MagicServer
@@ -21,8 +22,11 @@ module MagicServer
       @port = 3333
       @host = '127.0.0.1'
       @servlets = {}
-      @request = { server_name: @host.to_s, server_port: @port.to_s,
-        server_protocol: SERVER_PROTOCOL }
+      #@request = { server_name: @host.to_s, server_port: @port.to_s,
+        #server_protocol: SERVER_PROTOCOL }
+      @request = { :server_name =>  @host.to_s, server_port => @port.to_s,
+        server_protocol => SERVER_PROTOCOL }
+
       if args[0].is_a?(String)
         @host = args[1] if args[0].include? 'h'
         @port = args[1] if args[0].include? 'p'
@@ -37,46 +41,51 @@ module MagicServer
     # This is where the application really begins. This method
     # creates the 
     def start
-
       self.mount_all(MagicServer::BASE_PATH)
-       
       server = TCPServer.new @host, @port
 
       if @ssl
-        ctx = OpenSSL::SSL::SSLContext.new
-        ctx.cert = OpenSSL::X509::Certificate.new(File.open(CERT_PATH))
-        ctx.key = OpenSSL::PKey::RSA.new(File.open(KEY_PATH))
-        server = OpenSSL::SSL::SSLServer.new(server, ctx)
-        puts 'boo'
+        ssl = SSL.new(File.open(CERT_PATH), File.open(KEY_PATH))
+        server = ssl.ssl_server(server)
       end 
 
       # Create a server loop
       puts "Server created at #{@host} and port #{@port}"
-      while connection = server.accept
-        Thread.start(connection) do |connection|
-          # parse the entire request into a key/val map
-          request = @request.update MagicServer::parse_http_request(connection)
-          heading = request['Request-Line']
-          @logger.info(heading)
-          # Get the method from the heading
-          method = heading.split(' ')[0]
+      begin
+        #while connection = server.accept
+        loop do
+          begin 
+            connection = server.accept
+          rescue OpenSSL::SSL::SSLError 
+            puts 'HTTP connection attempted when SSL enabled'
+          end 
+          if connection
+            Thread.start(connection) do |connection|
+              # parse the entire request into a key/val map
+              request = @request.update MagicServer::parse_http_request(connection)
+              heading = request['Request-Line']
+              @logger.info(heading)
+              # Get the method from the heading
+              method = heading.split(' ')[0]
 
-          # Remove everything except the path from the heading
-          route = MagicServer::parse_heading(heading, method)[:route] 
-          request[:path] = route.to_s
-          request[:query_string] = heading.split(' ')[1].split('?')[1].to_s
-          puts route
-          begin
-            self.route(route, method, connection, request)
-          rescue Errno::ENOENT => e
-            # Catch file not founds
-            puts e.to_s
-            puts e.backtrace
-            connection.print "File not found"
-          end
-          connection.close
+              # Remove everything except the path from the heading
+              route = MagicServer::parse_heading(heading, method)[:route] 
+              request[:path] = route.to_s
+              request[:query_string] = heading.split(' ')[1].split('?')[1].to_s
+              puts route
+              begin
+                self.route(route, method, connection, request)
+              rescue Errno::ENOENT => e
+                # Catch file not founds
+                puts e.to_s
+                puts e.backtrace
+                connection.print "File not found"
+              end
+              connection.close
+            end 
+          end 
         end 
-      end
+      end 
     end 
 
     def mount(route, servlet)

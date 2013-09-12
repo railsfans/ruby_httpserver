@@ -80,26 +80,22 @@ module MagicServer
       request_str << line  
     end
 
-    puts request.readpartial(1024*16).inspect
-
     arrayed_request = request_str.split(/\r?\n/)
-    puts arrayed_request.to_s
     headers['Request-Line'] = arrayed_request.shift
-
-    # If there's a blank line, that means that there's
-    # a body on the last line
-    if arrayed_request.index { |line| line.strip.empty? }
-      headers['Body'] = arrayed_request.pop(2)[1] 
-    end 
 
     # For everything else, split on the first colon, and
     # dump it all into the headers map
-    arrayed_request.inject(headers) {|headers, line|
+    headers.update(arrayed_request.inject(headers) {|headers, line|
       split = line.split(':')
       headers[split.shift] = split.join(':').strip
       headers
-    }
-    puts headers.to_s
+    })
+
+    if headers.has_key? 'Content-Length'
+      headers['Body'] = request.readpartial(headers['Content-Length'].to_i)  
+      LoggerUtil.info('Body is ' << headers['Body'])
+    end 
+
     headers
   end 
 
