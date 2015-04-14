@@ -1530,3 +1530,395 @@ I, [2013-09-11T21:43:38.536590 #9746]  INFO -- : /home/dm/magic_server/lib/magic
 I, [2013-09-11T21:43:38.594135 #9746]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:64:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
 I, [2013-09-11T21:43:38.594815 #9746]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:64:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
 I, [2013-09-11T21:43:38.601973 #9746]  INFO -- : /home/dm/magic_server/lib/magic_server.rb:64:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:25:46.486544 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:25:47.049056 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:25:47.114138 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:25:47.182343 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:25:50.441690 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:26:06.736811 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:26:06.877109 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:26:06.961388 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:26:07.025697 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:26:13.264231 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:26:58.692245 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:26:58.829903 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:26:58.848903 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:27:31.081072 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:27:31.272062 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:27:31.272871 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:27:31.319793 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:28:59.794654 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:29:00.133000 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:00.135759 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:29:00.319907 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:29:02.344828 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:29:02.477536 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:02.551579 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:29:02.620542 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:29:06.879142 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:29:07.039083 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:07.101238 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:29:07.182295 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:29:11.579206 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:29:11.738948 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:11.800670 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:29:11.855390 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:29:32.171031 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:29:32.335026 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:32.401407 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:29:32.462939 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:29:53.170062 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:29:53.335371 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:29:53.414358 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:30:32.318068 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:30:32.513451 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:30:32.514071 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:30:32.670561 #26958]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:32:46.154837 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:32:46.704186 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:32:46.704899 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:32:46.842357 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:33:04.077363 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:33:04.209132 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:33:04.268466 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:33:04.340057 #27676]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:34:30.620363 #27846]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:35:33.682758 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:35:34.191100 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:35:34.192009 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:35:34.265277 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:47:05.500723 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:47:05.809945 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:47:05.812559 #27939]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:50:00.649298 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T09:50:01.214260 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:50:01.217524 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:50:01.228929 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T09:50:06.097481 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:50:06.352350 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:50:06.362664 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:50:20.736533 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:50:20.893528 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:50:20.896634 #29258]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T09:59:48.704670 #30207]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T09:59:49.229026 #30207]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T09:59:49.236263 #30207]  INFO -- : /opt/magic_server/lib/magic_server.rb:67:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:03:09.617073 #30519]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:03:10.132832 #30519]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:03:10.145559 #30519]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:04:39.771820 #30645]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:04:39.898239 #30645]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:04:39.903346 #30645]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:05:43.262294 #30756]  INFO -- : /opt/magic_server/lib/magic_server.rb:69:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:05:43.425867 #30756]  INFO -- : /opt/magic_server/lib/magic_server.rb:69:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:05:43.429877 #30756]  INFO -- : /opt/magic_server/lib/magic_server.rb:69:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:07:59.499331 #30990]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:08:00.008318 #30990]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:08:00.018145 #30990]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:09:02.844484 #31083]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:09:03.000264 #31083]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:09:03.005648 #31083]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:12:28.156078 #31418]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' Host: 192.168.1.209:3000
+I, [2015-04-14T10:12:41.086455 #31418]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' Host: 192.168.1.209:3000
+I, [2015-04-14T10:12:53.813758 #31418]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' Host: 192.168.1.209:3000
+I, [2015-04-14T10:17:09.562442 #31418]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' Host: 192.168.1.209:3000
+I, [2015-04-14T10:17:19.967330 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T10:17:20.150884 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:17:20.152335 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:17:20.156148 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T10:17:51.734607 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:17:51.865168 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:17:51.868576 #31868]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:19:09.256785 #32037]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:19:09.437593 #32037]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:19:09.441502 #32037]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:20:02.391913 #32118]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:20:02.551566 #32118]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:20:02.554926 #32118]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:22:40.961211 #32375]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:22:41.527243 #32375]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:22:41.530988 #32375]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:22:43.695453 #32375]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:30:59.410295 #633]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:30:59.534027 #633]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:30:59.537437 #633]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:32:14.474671 #797]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:32:14.676396 #797]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:32:14.679213 #797]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:33:13.522214 #907]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:33:13.763843 #907]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:33:13.774290 #907]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:34:34.666253 #1054]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:34:35.151172 #1054]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:34:35.161624 #1054]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:34:37.180257 #1054]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:35:39.873011 #1198]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:35:40.046899 #1198]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:35:40.053255 #1198]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:35:42.555705 #1198]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:41:40.034520 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:41:40.564177 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:41:40.576639 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:41:42.903127 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:47:04.276948 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:47:04.780905 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:47:04.788950 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:47:07.319155 #1745]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:47:19.115617 #2264]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:47:19.257114 #2264]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:47:19.269325 #2264]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:47:22.053991 #2264]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:48:05.547757 #2339]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:48:05.689676 #2339]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:48:05.695288 #2339]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:48:07.878924 #2339]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:48:43.915946 #2406]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:48:44.057794 #2406]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:48:44.062837 #2406]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:52:03.557910 #2728]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:52:04.095962 #2728]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:52:04.100109 #2728]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:52:06.905021 #2728]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T10:52:06.905171 #2728]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:55:38.357586 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:55:38.856748 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:55:38.860629 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:56:02.267251 #3065]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T10:56:02.267394 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T10:56:14.054141 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T10:56:14.188959 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:56:14.193652 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:56:21.522518 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T10:56:21.636463 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T10:56:21.644512 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T10:56:21.695576 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T10:56:22.996521 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:00:33.092764 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T11:00:33.621135 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:00:33.625070 #3065]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:04:46.972331 #4036]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T11:04:47.504671 #4036]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:04:47.511261 #4036]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:08:04.518906 #4322]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=grg
+I, [2015-04-14T11:08:04.519260 #4322]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T11:11:42.713809 #4668]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T11:11:43.254183 #4668]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:11:43.256764 #4668]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:11:55.871203 #4668]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T11:11:55.871342 #4668]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T11:12:52.728667 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T11:12:52.875595 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:12:52.883505 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:13:02.063175 #4775]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T11:13:02.063256 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T11:13:24.998741 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /application.js HTTP/1.1
+I, [2015-04-14T11:13:41.804624 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:13:41.956045 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:13:41.961520 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:13:42.037026 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:13:46.141212 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:13:58.128589 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:13:58.262620 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:13:58.269349 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:13:58.332109 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:14:01.894338 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:14:02.022034 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:14:02.028735 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:14:02.077254 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:23.303803 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:26.169625 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:15:26.302639 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:15:26.309245 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:15:26.372215 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:27.475237 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:35.784666 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:15:35.921811 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:15:35.928719 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:15:35.979474 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:39.317865 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:15:39.444807 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:15:39.452768 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:15:39.506735 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T11:15:43.186066 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T11:15:43.342470 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T11:15:43.348586 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T11:15:43.427824 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T12:35:16.584640 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T12:35:16.729849 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:35:16.816655 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:35:16.913617 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T12:35:29.496487 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T12:35:29.667406 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:35:29.759856 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:35:29.905122 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T12:35:46.277335 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T12:35:46.452446 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:35:46.512898 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:35:55.766611 #4775]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=90
+I, [2015-04-14T12:35:55.766762 #4775]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T12:39:59.960944 #12784]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T12:40:00.380755 #12784]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:40:00.383440 #12784]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:40:02.327240 #12784]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T12:40:02.327381 #12784]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T12:42:45.651258 #13058]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T12:42:46.085240 #13058]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:42:46.089257 #13058]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:42:48.128526 #13058]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=rfer
+I, [2015-04-14T12:42:48.128664 #13058]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T12:51:20.139609 #13882]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T12:51:20.539670 #13882]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T12:51:20.552529 #13882]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T12:51:23.386839 #13882]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=%5Bpp
+I, [2015-04-14T12:51:23.386935 #13882]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:06:25.454136 #20858]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:06:25.862082 #20858]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:06:25.884015 #20858]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:06:38.742154 #20858]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=ff
+I, [2015-04-14T14:06:38.742333 #20858]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:08:37.026596 #21119]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:08:37.513364 #21119]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:08:37.582041 #21119]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:08:39.552176 #21119]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:08:39.552311 #21119]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:11:15.736123 #21363]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:11:16.184979 #21363]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:11:16.217002 #21363]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:11:22.850252 #21363]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fef
+I, [2015-04-14T14:11:22.850335 #21363]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:12:11.842785 #21444]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:12:12.076943 #21444]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:12:12.080702 #21444]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:12:14.193139 #21444]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=grgr
+I, [2015-04-14T14:12:14.193241 #21444]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:13:11.757102 #21536]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:13:11.981998 #21536]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:13:12.039626 #21536]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:13:14.138130 #21536]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:13:14.138213 #21536]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:13:59.060294 #21615]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:13:59.317213 #21615]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:13:59.403576 #21615]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:14:00.978293 #21615]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fef
+I, [2015-04-14T14:14:00.978431 #21615]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:14:36.151391 #21615]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fef
+I, [2015-04-14T14:14:36.151556 #21615]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:14:47.516721 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:14:47.778584 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:14:47.851643 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:14:49.474816 #21694]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:14:49.474956 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:15:40.099707 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:15:40.363216 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:15:40.436156 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:15:49.313668 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:15:49.516447 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:15:49.516777 #21694]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:16:36.331986 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T14:16:36.538337 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:16:36.605431 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:16:36.686908 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T14:16:56.200229 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:16:56.457599 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:16:56.458567 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:17:05.959497 #21862]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fef
+I, [2015-04-14T14:17:05.959615 #21862]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:18:43.529894 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:18:43.999637 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:18:44.070892 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:19:02.974148 #22069]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:19:02.974296 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:19:50.724521 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:19:53.294594 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtestfefe HTTP/1.1
+I, [2015-04-14T14:20:25.670710 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtestfefe HTTP/1.1
+I, [2015-04-14T14:20:27.612631 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtestfefe HTTP/1.1
+I, [2015-04-14T14:22:44.024784 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /test HTTP/1.1
+I, [2015-04-14T14:24:33.397623 #22069]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /test.html HTTP/1.1
+I, [2015-04-14T14:26:45.917092 #22814]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /test.html HTTP/1.1
+I, [2015-04-14T14:27:46.120601 #22814]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T14:27:46.330290 #22814]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:27:46.394244 #22814]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:27:46.455213 #22814]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T14:28:03.189664 #22953]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T14:28:03.372848 #22953]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:28:03.458540 #22953]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:28:03.523362 #22953]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T14:32:09.238326 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET / HTTP/1.1
+I, [2015-04-14T14:32:09.693797 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:32:09.760241 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:32:09.844276 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /img/avatar.JPG HTTP/1.1
+I, [2015-04-14T14:34:11.904800 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:34:12.355064 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:34:12.410692 #23357]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:47:27.719660 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:47:28.159428 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:47:28.237164 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:47:37.430907 #24812]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=kuiku
+I, [2015-04-14T14:47:37.431036 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:47:37.633026 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:47:37.706979 #24812]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:48:50.865115 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:48:51.073097 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:48:51.127019 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:48:53.164296 #24949]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=grgr
+I, [2015-04-14T14:48:53.164444 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:48:53.330977 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:48:53.399238 #24949]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:49:54.224413 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:49:54.409946 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:49:54.414365 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:49:57.067677 #25048]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:49:57.067871 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:49:57.218613 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:49:57.227281 #25048]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:51:32.555700 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:51:33.020198 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:51:33.070634 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:51:34.745465 #25199]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:51:34.745630 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:51:34.962314 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:51:35.011303 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:52:11.495042 #25199]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:52:11.495226 #25199]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:52:20.652408 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:52:20.865879 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:52:20.927320 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:52:22.267988 #25282]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:52:22.268132 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:52:31.437309 #25282]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fef
+I, [2015-04-14T14:52:31.437455 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:52:31.673246 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:52:31.737185 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:52:34.526708 #25282]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:52:34.526873 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:52:34.694070 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:52:34.696475 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:52:35.716628 #25282]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:52:35.716768 #25282]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:14.051260 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /erbtest HTTP/1.1
+I, [2015-04-14T14:53:14.272217 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:14.342210 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:15.669603 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:53:15.669724 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:15.820413 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:15.887269 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:17.238539 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:53:17.238671 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:17.383399 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:17.440385 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:18.965472 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=fefe
+I, [2015-04-14T14:53:18.965611 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:19.217515 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:19.287389 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:20.014336 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:53:20.014416 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:20.179915 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:20.249475 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:20.618268 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=
+I, [2015-04-14T14:53:20.618409 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:20.775465 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:20.833601 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1
+I, [2015-04-14T14:53:55.663154 #25369]  INFO -- : /opt/magic_server/lib/magic_server/server_utils.rb:97:in `parse_http_request' Body is user=frgr
+I, [2015-04-14T14:53:55.663305 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' POST /erbtest HTTP/1.1
+I, [2015-04-14T14:53:55.829156 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /js/application.js HTTP/1.1
+I, [2015-04-14T14:53:55.895293 #25369]  INFO -- : /opt/magic_server/lib/magic_server.rb:68:in `block (2 levels) in start' GET /css/application.css HTTP/1.1

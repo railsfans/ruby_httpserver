@@ -18,4 +18,15 @@ class ERBServlet < MagicServer::Servlet
     response << MagicServer::render_erb(view, vars)
     session.print(response)
   end 
+  def do_POST(session, request)
+    puts MagicServer::parse_post_body(request["Body"])
+    view = MagicServer::find_file('views/test.html.erb')
+    response = ''
+    response << HTTP_SUCCESS
+    response << MagicServer::content_type(HTML_TYPE)
+    message = 'this page is post request return, username is '+MagicServer::parse_post_body(request["Body"])["user"].to_s
+    vars = { some_var: message }
+    response << MagicServer::render_erb(view, vars)
+    session.print(response)
+  end
 end 

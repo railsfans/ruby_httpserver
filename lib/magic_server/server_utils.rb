@@ -12,15 +12,15 @@ module MagicServer
   def self.parse_heading(heading, method)
     ret = {}
     arguments = {}
-
+    
     parsed_heading = heading.gsub(/#{method}\ \//, '')
     parsed_heading.gsub!(/\ HTTP.*/, '')
     parsed_heading.chomp!
-
+   
     #Split up the heading between the routes and the arguments
     split_heading = parsed_heading.split('?')
     ret[:route] = split_heading[0]
-
+    
     #Parse the arguments into a map
     if split_heading.size > 1
       split_heading[1].split('&').each do |key_val|
@@ -76,13 +76,14 @@ module MagicServer
     # Need to use readpartial instead of read because read will
     # block due to the lack of a EOF
     request_str = ''
+    
     until (line = request.gets) && (line.inspect.eql?('"\r\n"'))
       request_str << line  
     end
-
+    
     arrayed_request = request_str.split(/\r?\n/)
     headers['Request-Line'] = arrayed_request.shift
-
+    
     # For everything else, split on the first colon, and
     # dump it all into the headers map
     headers.update(arrayed_request.inject(headers) {|headers, line|
@@ -92,10 +93,9 @@ module MagicServer
     })
 
     if headers.has_key? 'Content-Length'
-      headers['Body'] = request.readpartial(headers['Content-Length'].to_i)  
-      LoggerUtil.info('Body is ' << headers['Body'])
+     headers['Body'] = request.readpartial(headers['Content-Length'].to_i)  
+     LoggerUtil.instance.info('Body is ' << headers['Body'])
     end 
-
     headers
   end 
 

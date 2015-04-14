@@ -9,6 +9,7 @@ require_relative 'magic_server/errors'
 require_relative 'magic_server/utils'
 require_relative 'magic_server/logger_util'
 require_relative 'magic_server/ssl'
+require_relative 'magic_server/mysql_helper'
 include MagicServer
 
 module MagicServer
@@ -19,13 +20,13 @@ module MagicServer
     # args is an array passed in from run.rb
     def initialize(args = [])
       @command = args[0]
-      @port = 3333
-      @host = '127.0.0.1'
+      @port =  3000
+      @host = '0.0.0.0'
       @servlets = {}
       #@request = { server_name: @host.to_s, server_port: @port.to_s,
         #server_protocol: SERVER_PROTOCOL }
-      @request = { :server_name =>  @host.to_s, server_port => @port.to_s,
-        server_protocol => SERVER_PROTOCOL }
+      @request = { :server_name =>  @host.to_s, :server_port => @port.to_s,
+        :server_protocol => SERVER_PROTOCOL }
 
       if args[0].is_a?(String)
         @host = args[1] if args[0].include? 'h'
@@ -36,6 +37,11 @@ module MagicServer
         end 
       end 
       @logger = LoggerUtil.instance
+   
+      @mysql_server_ip = '127.0.0.1'
+      @mysql_username = 'root'
+      @mysql_passwd = 'root'
+      @mysql_db = 'test'
     end 
 
     # This is where the application really begins. This method
@@ -51,6 +57,11 @@ module MagicServer
 
       # Create a server loop
       puts "Server created at #{@host} and port #{@port}"
+      
+      # Connect mysql
+      mysql_helper=MagicServer::MysqlHelper.new
+      mysql_helper.open(@mysql_server_ip, @mysql_user, @mysql_passwd, @mysql_db)
+
       begin
         #while connection = server.accept
         loop do
@@ -61,18 +72,20 @@ module MagicServer
           end 
           if connection
             Thread.start(connection) do |connection|
+              
               # parse the entire request into a key/val map
               request = @request.update MagicServer::parse_http_request(connection)
               heading = request['Request-Line']
               @logger.info(heading)
+
               # Get the method from the heading
               method = heading.split(' ')[0]
-
+              
               # Remove everything except the path from the heading
               route = MagicServer::parse_heading(heading, method)[:route] 
               request[:path] = route.to_s
               request[:query_string] = heading.split(' ')[1].split('?')[1].to_s
-              puts route
+              puts route.to_s+' this is route'
               begin
                 self.route(route, method, connection, request)
               rescue Errno::ENOENT => e

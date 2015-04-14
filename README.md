@@ -17,6 +17,6 @@ Open up a terminal and type:
 1. git clone https://github.com/sayonarauniverse/magic_server.git
 2. cd magic_server && cd example
 3. ruby run (or if you're windows, just 'run')
-4. Open a browser and type in 'localhost:3333'
+4. Open a browser and type in 'localhost:3000'
 
 Todo: Fix SSL
