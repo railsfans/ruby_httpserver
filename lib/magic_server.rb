@@ -17,7 +17,7 @@ module MagicServer
   class Server
     attr_accessor :port, :host, :servlets
 
-    # args is an array passed in from run.rb
+    # args is an array passed in from run
     def initialize(args = [])
       @command = args[0]
       @port =  3000
@@ -33,7 +33,8 @@ module MagicServer
         @port = args[1] if args[0].include? 'p'
         if args[0].include? 's'
           @ssl = true 
-          @port = 443
+       #   @port = 443
+	  @port = 3000
         end 
       end 
       @logger = LoggerUtil.instance
@@ -45,7 +46,7 @@ module MagicServer
     end 
 
     # This is where the application really begins. This method
-    # creates the 
+    # create loop waiting 
     def start
       self.mount_all(MagicServer::BASE_PATH)
       server = TCPServer.new @host, @port
@@ -68,7 +69,7 @@ module MagicServer
           begin 
             connection = server.accept
           rescue OpenSSL::SSL::SSLError 
-            puts 'HTTP connection attempted when SSL enabled'
+            puts 'HTTPS connection attempted when SSL enabled'
           end 
           if connection
             Thread.start(connection) do |connection|
